@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    /* border: 1px solid; */
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    border: 1px solid;
+}
+
+.header > Title{
+    margin: 20px;
+}
+
+.header > ul{
+    display: flex;
+}
+
+ul > li{
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.headerImg{
+    width: 100vw;
+    height: 80px;
+}
+.headerImg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headerImg .transparent-bar {
+    z-index: 3;
+    background-color: #0000004d;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 56px;
+}
+
+.headerImg .options{
+    position: absolute;
+    top: 69px;
+    left: 30%;
+    display: flex;
+    z-index: 4;
+    gap: 20px;
+}
+.options input[type="date"]{
+   padding: 6px;
+}
+.options input[type="date"]:focus{
+    outline: none;
+}
+
+.options select:focus{
+    outline: none;
+}
+
+.btn-modify{
+  position: relative;
+  z-index: 10;
+  top: -62px;
+  left:902px;
+  padding: 6px 20px;
+  background-color: rgb(5, 93, 255);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-modify:hover{
+    background-color: rgb(5, 73, 200);;
+}
+
+/* ======Body=====*/
+
+.body-flex{
+    display: flex;
+}
+.body-left{
+    width: 60%;
+    /* border: 1px solid; */
+}
+
+.room-rate{
+    margin-top: 63px;
+    padding-left: 100px;
+}
+
+.room-rate::after{
+    content: "Plan your perfect stay at our hotel";
+    font-weight:lighter;
+    font-size: 16px;
+    display: block;
+}
+.prgrsImg-1{
+    width: 60%;
+    margin: 40px 0;
+    padding-left: 100px;
+}
+
+.hotel-card{
+    width: 708px;
+    height: 285px;
+    border: 1px solid lightgray;
+    margin: 0 100px;
+    display: flex;
+}
+.hotel-card:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.hotel-card .room-1 {
+    width:70%;
+    height: 70%;
+    margin-left: -4%;
+    display: flex;
+    align-items: center;
+}
+.room-1 .first-room{
+   width: 90%;
+   height: 90%;
+   border-radius: 2px;
+   transition: transform 2s ease;
+
+}
+.hotel-card :hover .first-room{
+    transform: scale(1.1);
+}
+.room-1, .description{
+    margin-top: 6%;
+}
+.description{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+   
+}
+.description .room-size{
+    margin: 10px 0 0 0;
+}
+.description .icon-1{
+    margin: 20px 0 0 0;
+}
+.bed-people-price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.body-right{
+    width: 40%;
+    /* border: 1px solid; */
+}
+.right-div-1{
+    width: 75%;
+    margin: 0 40px;
+    /* border: 1px solid; */
+    overflow: hidden;
+}
+.right-div-1 > div img{
+    width: 300px;
+    /* border: 1px solid; */
+    margin: 10px 110px;
+}
+
+.right-div-1 > div h1{
+    display: inline-block;
+    /* border: 1px solid; */
+    margin: -20px 5px;
+}
+.right-div-1 > div p{
+    margin: 10px 5px;
+}
+.right-div-1 > div button{
+    margin: 10px 5px;
+    padding: 8px 20px;
+    background-color: rgb(5, 93, 255);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.right-div-1 > div button:hover{
+    background-color: rgb(5, 73, 200);
+}
+
+.right-div-2 {
+    border: 1px solid lightgray;
+    margin: 10px 45px;
+    width: 75%;
+}
+.right-div-2 h2{
+    margin: 0 20px;
+}
+.right-div-2 form {
+    position: relative;
+}
+.right-div-2 form select{
+    position: absolute;
+    right: 0px;
+    margin: -20px 26px
+}
+
+.check-in-out{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    margin-top: 60px;
+    font-weight: 700;
+}
+
+.time-div{
+    margin: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.reservation{
+    font-weight: 700;
+}
+.reservation-date{
+    margin: 30px 20px;
+    font-size: 18px;
+}
+
+.people-div{
+    margin: 5px 20px;
+    font-size: 18px;
+}
+hr{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.total-div{
+    margin: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.submit-btn{
+    border: 1px solid black;
+    display: block;
+    margin: 40px auto;
+    padding: 8px 140px;
+    background-color: rgb(5, 93, 255);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.submit-btn:hover{
+    background-color: rgb(5, 73, 200);
+
+}
